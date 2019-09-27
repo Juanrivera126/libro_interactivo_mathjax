@@ -152,7 +152,7 @@
         <div class="toc_link" onclick="goToPage(12)"><a>1.2 Interactivos<span class="toc_number">12</span></a></div>
         <div class="toc_link" onclick="goToPage(16)"><a>1.3 Vídeos<span class="toc_number">16</span></a></div>
         <div class="toc_link" onclick="goToPage(18)"><a>1.4 Imágenes<span class="toc_number">18</span></a></div>
-        <div class="toc_link" onclick="goToPage(20)"><a>1.5 Código<span class="toc_number">20</span></a></div>
+        <div class="toc_link" onclick="goToPage(21)"><a>1.5 Código<span class="toc_number">21</span></a></div>
 
         <div class="toc_link" style="font-weight:bold;" onclick="goToPage(23)">
           <a style="padding-left:0">2. Expresiones matemáticas con MathJax<span class="toc_number">23</span></a>
@@ -382,6 +382,23 @@ images/logodescartes.gif" width="40%"></xmp>
         <img src="https://proyectodescartes.org/descartescms/images/logodescartes.gif" width="40%">
       </div>
 
+      <!-- -->
+      <div class="page">
+        <p>Si queremos una imagen que al hacer clic sobre ella, muestre en una ventana emergente hacia algún vínculo, por ejemplo, un recurso interactivo, debemos utilizar:</p>
+
+<xmp><img class="image_link" 
+onclick="openInteractive('https://proyectodescartes.org/
+Telesecundaria/materiales_didacticos/3m_b01_t01_s01-JS/
+index.html', '790', '530')" 
+src="https://proyectodescartes.org/Telesecundaria/
+imagenes_descripcion_materiales/3m_b01_t01_s01.png" 
+width="75%"></xmp>
+
+        <img class="image_link" onclick="openInteractive('https://proyectodescartes.org/Telesecundaria/materiales_didacticos/3m_b01_t01_s01-JS/index.html', '790', '570')" src="https://proyectodescartes.org/Telesecundaria/imagenes_descripcion_materiales/3m_b01_t01_s01.png" width="75%">
+
+        <p>El código <code>openInteractive('url', 'ancho', 'alto)</code>, es el que se encarga de abrir el vínculo en una nueva ventana emergente, de tal manera que <code>url</code> corresponde a la dirección del recurso a mostrar, <code>ancho</code> y <code>alto</code> determinan el tamaño de la ventana emergente.</p>
+      </div>
+
       <!--  -->
       <div class="page">
         <h2>1.5 Código</h2>
@@ -407,11 +424,6 @@ y=10
 
         <p>Hay que considerar que la etiqueta <code>&lt;pre&gt;</code> respeta los espacios.</p>
       </div>
-
-      <!--  -->
-      <!-- Una página en blanco y sin numeración visible -->
-      <!--  -->
-      <div class="page" num=""></div>
 
       <!--  -->
       <!-- Una página en blanco y sin numeración visible -->
